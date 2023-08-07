@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="designer" content="Tanjina Akter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIDDABD math</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap Dropdown Hover CSS -->
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <!-- <link href="assets/css/bootstrap-dropdownhover.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-dropdownhover.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/font-awesomeall.min.css">
+    <!-- slick slider  -->
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/biddabd-favicon.png">
+</head>
+<body>
+    <!-- header starts  -->
+    <header class="math-header fixed-top">
+        <div class="container">
+            <div class="math-striky-header">
+                <div class="header-left">
+                    <a href="index.html">
+                        <img src="assets/images/biddabd-math-logo.png" alt="logo img">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="start-modal">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #5322FF;color: #fff;border-bottom: 2px solid #160066;padding: 10px 15px;border-radius: 10px;">
+                            Start Learning
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content" style="padding: 20px;border-radius: 15px;">
+                                <div class="modal-header">
+                                <h1 class="modal-title" id="staticBackdropLabel" style="font-size: 32px;line-height: 40px;">Get started with <br> <span  style="color: #5322FF;">BIDDABD Math</span></h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #f3f3f6;color: #6a6a8c !important;border-radius: 50px;padding: 12px;"></button>
+                                </div>
+                                <div class="modal-body">
+                                <div class="math-form">
+                                    <form >
+                                        <div class="d-flex justify-content-between">
+                                            <div class="dropdown country-dropdown">
+                                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Select Country
+                                                </a>
+                                            
+                                                <ul class="dropdown-menu country-dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">Afganistan  +93</a></li>
+                                                <li><a class="dropdown-item" href="#">Aland Island +358</a></li>
+                                                <li><a class="dropdown-item" href="#">Albania +355</a></li>
+                                                <li><a class="dropdown-item" href="#">Bangladesh +880</a></li>
+                                                <li><a class="dropdown-item" href="#">American Samoa +1684</a></li>
+                                                <li><a class="dropdown-item" href="#">Andorra +376</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="input-number">
+                                                <input type="number" name="phone_number" id="phone_number" placeholder="Your Phone Number">
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="terms-text">
+                                            <p>By continuing on this page you agree to BIDDABD Math's
+                                            <a target="_blank" href="terms-conditions.html" style="color: #5322FF;">T&amp;Cs</a>, acknowledge that you have read the
+                                            <a target="_blank" href="privacy-policy.html" style="color: #5322FF;">Privacy Policy</a>
+                                            . Email to opt-out. Your consent is not a condition of any purchase.</p>
+                                        </div>
+                                        <div class="continueBtn">
+                                            <button disabled="disabled">Continue</button>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                                </div>
+                                <div class="modal-footer ">
+                                    <div class="emailBtn"><a href="#" style="color: #5322FF;">Or use your email address</a></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends  -->
+    <!-- math-home starts  -->
+    <section id="math-home" class="math-home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="math-left pt-4">
+                        <div class="math-logo pl-4 pt-4">
+                            <a href="index.html">
+                                <img src="assets/images/biddabd-math-logo.png" class="logo img-fluid" alt="logo">
+                            </a>
+                        </div>
+                        <div class="math-home-content">
+                            <h1>Explore the <br>  world of Math</h1>
+                            <p class="pt-4">BIDDABD Math is a self-paced learning app for grade 4-8. Better learning with personalized, adaptive, and engaging videos and practice modules.</p>
+                        </div>
+                        <div class="start-modal pl-4">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#startModal" style="background-color: #5322FF;color: #fff;border-bottom: 2px solid #160066;padding: 10px 15px;border-radius: 10px;">
+                                Start Learning
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="startModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="startModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content" style="padding: 20px;border-radius: 15px;">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title" id="startModalLabel" style="font-size: 32px;line-height: 40px;">Get started with <br> <span  style="color: #5322FF;">BIDDABD Math</span></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #f3f3f6;color: #6a6a8c !important;border-radius: 50px;padding: 12px;"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <div class="math-form">
+                                        <form >
+                                            <div class="d-flex justify-content-between">
+                                                <div class="dropdown country-dropdown">
+                                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Select Country
+                                                    </a>
+                                                
+                                                    <ul class="dropdown-menu country-dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <li><a class="dropdown-item" href="#">Afganistan  +93</a></li>
+                                                    <li><a class="dropdown-item" href="#">Aland Island +358</a></li>
+                                                    <li><a class="dropdown-item" href="#">Albania +355</a></li>
+                                                    <li><a class="dropdown-item" href="#">Bangladesh +880</a></li>
+                                                    <li><a class="dropdown-item" href="#">American Samoa +1684</a></li>
+                                                    <li><a class="dropdown-item" href="#">Andorra +376</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="input-number">
+                                                    <input type="number" name="phone_number" id="phone_number" placeholder="Your Phone Number">
+                                                </div>
+                                                
+                                            </div>
+    
+                                            <div class="terms-text">
+                                                <p>By continuing on this page you agree to BIDDABD Math's
+                                                <a target="_blank" href="terms-conditions.html" style="color: #5322FF;">T&amp;Cs</a>, acknowledge that you have read the
+                                                <a target="_blank" href="privacy-policy.html" style="color: #5322FF;">Privacy Policy</a>
+                                                . Email to opt-out. Your consent is not a condition of any purchase.</p>
+                                            </div>
+                                            <div class="continueBtn">
+                                                <button disabled="disabled">Continue</button>
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer ">
+                                        <div class="emailBtn"><a href="#" style="color: #5322FF;">Or use your email address</a></div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="math-right">
+                        <!-- <img src="assets/images/bannerBg.avif" class="img-fluid" alt="bannerBg"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="feature-content">
+                        <span class="ml-4">Featured in</span>
+                        <div class="feature-img">
+                            <ul>
+                                <li><img src="assets/images/featuredin_1.a84ba383.svg" class="img-fluid" alt="feature-img"></li>
+                                <li><img src="assets/images/featuredin_2.c9eefa4b.svg" class="img-fluid" alt="feature-img"></li>
+                                <li><img src="assets/images/featuredin_3.53851883.svg" class="img-fluid" alt="feature-img"></li>
+                                <li><img src="assets/images/featuredin_4.c42464f6.svg" class="img-fluid" alt="feature-img"></li>
+                                <li><img src="assets/images/featuredin_5.7c474aed.svg" class="img-fluid" alt="feature-img"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- feature ends  -->
+    </section>
+    <!-- math-home ends  -->
+    <!-- self starts  -->
+    <section id="self" class="self section-padding-top section-padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6  d-flex justify-content-xl-around
+                text-center trust-left-content">
+                  <div class="trust-left">
+                    <img src="assets/images/illustration_1.0c0ba184.svg" alt="self img">
+                    <h5>Self-paced <br>
+                        learning</h5>
+                    <p>Rich visualizations help <br> students ace math concepts <br> at their own pace.</p>
+                  </div>
+                  <div class="trust-left">
+                    <img src="assets/images/illustration_3.3b6d360d.svg" alt="self img">
+                    <h5>Curriculum-
+                       <br>
+                       mapped</h5>
+                    <p>Content is mapped to your <br> child's school curriculum, so <br> they never fall behind : )</p>   
+                  </div>
+                </div>
+                <div class="col-lg-6  d-flex justify-content-xl-around
+                text-center trust-left-content">
+                  <div class="trust-left">
+                    <img src="assets/images/illustration_1.0c0ba184.svg" alt="self img">
+                    <h5>Free  <br>
+                        of cost</h5>
+                    <p>Yes! You read that right. Your <br> child can learn and master <br> math concepts for free.</p>
+                  </div>
+                  <div class="trust-left">
+                    <img src="assets/images/illustration_4.f560a3bd.svg" alt="self img">
+                    <h5>100% safe
+                       <br>
+                       for kids</h5>
+                    <p>Our live classes are COPPA <br> compliant and 100% safe for <br> students.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- self ends  -->
+    <!-- math-fun starts  -->
+    <section id="math-fun" class="math-fun">
+        <div class="container">
+            <div class="title mb-5 ml-4">
+                <h2 class="" style="font-size: 48px; line-height: 49px;
+            ">We make <br> <span style="font-size: 60px; line-height: 59px; color: #5322FF;">math fun</span></h2>
+            <p style="color: #9c9cae;padding-top: 20px;font-size: 24px;line-height: 34px;">Personalised, adaptive, engaging learning <br>modules</p>
+              </div>
+            <div class="learn">
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <div class="learn-left">
+                            <div class="learn-text-display">
+                                <div class="learn-img ml-4">
+                                    <img src="assets/images/learnLhsCombo.2755aa96.svg" class="img-fluid" alt="learn img">
+                                </div>
+                                <div class="learn-title ml-4"><h4>Learn</h4></div>
+                                <div class="learn-text ml-4 mt-2">
+                                    <p>Watch topic wise videos of a chapter</p>
+                                    <p>Start a guided journey</p>
+                                    <p>Try practice questions</p>
+                                </div>
+                            </div>
+                            <div class="learn-text-hidden ml-4">
+                                <div class="learn-hidden-img ">
+                                    <img src="assets/images/learnMweb.2e850be8.svg" class="img-fluid" alt="learn img">
+                                    <h4 class="mt-2 ml-2">Learn</h4>
+                                </div>
+                                <p>Watch topic wise videos of a chapter. Start your guided journey to learn a chapter from scratch.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="learn-right">
+                            <img src="assets/images/learnRhs.avif" class="img-fluid" alt="learnRhs">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- learn ends  -->
+            <div class="practice">
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <div class="learn-left">
+                            <div class="learn-text-display">
+                                <div class="learn-img ml-4">
+                                    <img src="assets/images/practiceLhsCombo.f4a10db1.svg" class="img-fluid" alt="learn img">
+                                </div>
+                                <div class="learn-title ml-4"><h4>Practice</h4></div>
+                                <div class="learn-text ml-4 mt-2">
+                                    <p>Try a variety of practice modules</p>
+                                    <p>Build speed with time-based practice</p>
+                                    <p>Complete daily goals and level up</p>
+                                </div>
+                            </div>
+                            <div class="learn-text-hidden ml-4">
+                                <div class="learn-hidden-img ">
+                                    <img src="assets/images/practiceMweb.29c1b2e6.svg" class="img-fluid" alt="learn img">
+                                    <h4 class="mt-2 ml-2">Practice</h4>
+                                </div>
+                                <p>Variety of practice modules. Do time based practice to build confidence. Complete daily goals and keep leveling up</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="learn-right">
+                            <img src="assets/images/practiceRhs.avif" class="img-fluid" alt="learnRhs">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- practice ends  -->
+            <div class="challenge">
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <div class="learn-left">
+                            <div class="learn-text-display">
+                                <div class="learn-img ml-4">
+                                    <img src="assets/images/challengeLhsCombo.71f9207d.svg" class="img-fluid" alt="learn img">
+                                </div>
+                                <div class="learn-title ml-4"><h4>Challenge</h4></div>
+                                <div class="learn-text ml-4 mt-2">
+                                    <p>Try daily challenges</p>
+                                    <p>Build a winning streak</p>
+                                    <p>Level up in the leaderboard</p>
+                                </div>
+                            </div>
+                            <div class="learn-text-hidden ml-4">
+                                <div class="learn-hidden-img ">
+                                    <img src="assets/images/challengeMweb.305de050.svg" class="img-fluid" alt="learn img">
+                                    <h4 class="mt-2 ml-2">Challenge</h4>
+                                </div>
+                                <p>Participate in daily challenges. Build up your streak. Level up on the leaderboard and show your Math skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="learn-right">
+                            <img src="assets/images/challengeRhs.avif" class="img-fluid" alt="learnRhs">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- challenge ends  -->
+            <div class="play">
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <div class="learn-left">
+                            <div class="learn-text-display">
+                                <div class="learn-img ml-4">
+                                    <img src="assets/images/playLhsCombo.170fa511.svg" class="img-fluid" alt="learn img">
+                                </div>
+                                <div class="learn-title ml-4"><h4>Play</h4></div>
+                                <div class="learn-text ml-4 mt-2">
+                                    <p>Play mental math games</p>
+                                    <p>Try storyline-based games</p>
+                                    <p>Earn rewards</p>
+                                </div>
+                            </div>
+                            <div class="learn-text-hidden ml-4">
+                                <div class="learn-hidden-img ">
+                                    <img src="assets/images/playMweb.b4910cfc.svg" class="img-fluid" alt="learn img">
+                                    <h4 class="mt-2 ml-2">Play</h4>
+                                </div>
+                                <p>Play story based short format games. Solve interesting Math problems & learn.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="learn-right">
+                            <img src="assets/images/playRhs.avif" class="img-fluid" alt="learnRhs">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- play ends  -->
+        </div>
+    </section>
+    <!-- math-fun ends  -->
+<!-- students-worldwide starts  -->
+<section id="students-worldwide" class="students-worldwide section-padding-top section-padding-bottom">
+    <div class="container">
+      <div class="title mt-5 mb-5">
+        <h2 class="text-center text-dark" style="font-size: 48px;line-height: 42px;">Join 1 million+ students worldwide</h2>
+      </div>
+      <div class="students-worldwide-item">
+        <div class="byjus-news-content">
+            <div class="row ">
+              <div class="col-md-6">
+                <div class="byjus-news-right ml-5 mt-3">
+                  <img src="assets/images/testimonialProfilePic_2.avif" class="img-fluid"
+                   alt="trust img">
+                </div>
+              </div>
+              <div class="col-md-6  ">          
+                  <div class="byjus-news-left students-worldwide-content ml-3">
+                    <h3 class="mt-2 " style="font-size: 31px; line-height: 46px; ">Vibha Satyan (3rd grade)</h3>
+                    <span style="color: #5322FF;">Australia</span>  
+                    <img class="quote-img" src="assets/images/quote.6066840c.svg" alt="quote img">
+                    <p>Since she has started her math classes with BIDDABD Math, Aanvi applies logic, looks forward to school tests, talks about what happens in math at school, readily attempts quizzes, and just loves math now. From counting to back counting, skip counting to adding and subtracting tens and ones, she has learned a lot!</p>  
+                    <span style="color: #AEAEBD;">– Bindu Satyan (Vibha’s mother)</span>          
+                  </div>        
+              </div>           
+            </div>
+        </div>
+        <div class="byjus-news-content">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="byjus-news-right ml-5 mt-3">
+                  <img src="assets/images/testimonialProfilePic_1.avif" class="img-fluid"
+                   alt="trust img">
+                </div>
+              </div>
+              <div class="col-md-6  ">          
+                  <div class="byjus-news-left students-worldwide-content ml-3">
+                    <h3 class="mt-2 " style="font-size: 31px; line-height: 46px; ">Aanvi Tripathi (1st grade)</h3>
+                    <span style="color: #5322FF;">Perth, Australia</span>
+                    <img class="quote-img" src="assets/images/quote.6066840c.svg" alt="quote img">
+                    <p>Since she has started her math classes with BIDDABD Math, Aanvi applies logic, looks forward to school tests, talks about what happens in math at school, readily attempts quizzes, and just loves math now. From counting to back counting, skip counting to adding and subtracting tens and ones, she has learned a lot!</p>  
+                    <span style="color: #AEAEBD;">– Shikha Tripathi (Aanvi’s mother)</span>            
+                  </div>                              
+              </div>           
+            </div>
+        </div>
+        <div class="byjus-news-content">
+            <div class="row ">
+              <div class="col-md-6">
+                <div class="byjus-news-right ml-5 mt-3">
+                  <img src="assets/images/testimonialProfilePic_3.avif" class="img-fluid"
+                   alt="trust img">
+                </div>
+              </div>
+              <div class="col-md-6  ">          
+                  <div class="byjus-news-left students-worldwide-content ml-3">
+                    
+                    <h3 class="mt-2 " style="font-size: 31px; line-height: 46px; ">Jonathan Johnraj (3rd grade)</h3>
+                    <span style="color: #5322FF;">Newyork City, USA</span>
+                    <img class="quote-img" src="assets/images/quote.6066840c.svg" alt="quote img">
+                    <p>With BIDDABD Math, Jonathan has started calculating everything that he sees around him and numbering them rapidly. He has become a quick math solver.</p>    
+                    <span style="color: #AEAEBD;">– Jenita (Jonathan’s mother)</span>          
+                  </div>             
+              </div>           
+            </div>
+        </div>
+      </div> <!-- students-worldwide-item ends  -->
+      
+    </div>
+  </section>
+  <!-- students-worldwide ends  -->
+  <!-- learning-journey starts  -->
+  <section id="learning-journey" class="learning-journey section-padding-bottom">
+      <div class="container">
+        <div class="learning-journey-content">
+            <div class="title ml-5 mb-4">
+                <h2 class="text-dark" style="font-size: 42px;line-height: 49px;  margin-bottom: 10px;">Begin a learning <br> journey with us</h2>
+                <p style="color: #6A6A86;">Available on iOS & Android</p>
+              </div>
+            <div class="row journey-item">
+                <div class="col-md-6">
+                    <div class="learn-left ml-5">                       
+                        <div class="journey-left-img">
+                            <img src="assets/images/appstore.c8f6e1b6.svg" class="img-fluid mr-2 mb-2" alt="appstore">
+                            <img src="assets/images/playstore.487770a7.svg" class="img-fluid" alt="playstore">
+                        </div>
+                        <div class="app-description">
+                            <p class="mt-5">Get the download link on your phone</p>
+                            <div class="app-input rounded">   
+                                <div class="dropdown country-dropdown">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Country
+                                    </a>                              
+                                    <ul class="dropdown-menu country-dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Afganistan  +93</a></li>
+                                    <li><a class="dropdown-item" href="#">Aland Island +358</a></li>
+                                    <li><a class="dropdown-item" href="#">Albania +355</a></li>
+                                    <li><a class="dropdown-item" href="#">Algeria +213</a></li>
+                                    <li><a class="dropdown-item" href="#">American Samoa +1684</a></li>
+                                    <li><a class="dropdown-item" href="#">Aland Islands +358</a></li>
+                                    <li><a class="dropdown-item" href="#">Andorra +376</a></li>
+                                    <li><a class="dropdown-item" href="#">Argentina +54</a></li>
+                                    <li><a class="dropdown-item" href="#">Belarus +375</a></li>
+                                    <li><a class="dropdown-item" href="#">Bangladesh +880</a></li>
+                                    <li><a class="dropdown-item" href="#">Brazil +55</a></li>
+                                    </ul>
+                                </div>                        
+                                  <input class="inputPhone" placeholder="Phone Number" maxlength="15" type="tel" autocomplete="tel">
+                                  <button type="button" class="btn btn-secondary sendBtn" disabled data-bs-toggle="button" autocomplete="off">Send link</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="journey-right">
+                        <img src="assets/images/appDescriptionBg.avif" class="img-fluid" alt="learnRhs">
+                    </div>
+                </div>
+            </div><!-- journey-item ends  -->
+            <div class="math-journey  section-padding-top">
+                <div class="row journey-item math-journey-content justify-content-center align-items-center">
+                    <div class="col-md-6">
+                        <div class="math-journey-left  ">                       
+                            <div class="title ml-2 mb-4">
+                                <h2 style="">Begin your child's <span style="color: #5322FF;">math</span><br> journey today!</h2>
+                            </div>    
+                            <div class="start-modal pl-4 mb-2">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#getModal" style="background-color: #5322FF;color: #fff;border-bottom: 2px solid #160066;padding: 10px 15px;border-radius: 10px;">
+                                    Get Starting
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="getModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="getModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content" style="padding: 20px;border-radius: 15px;">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title" id="getModalLabel" style="font-size: 32px;line-height: 40px;">Get started with <br> <span  style="color: #5322FF;">BIDDABD Math</span></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #f3f3f6;color: #6a6a8c !important;border-radius: 50px;padding: 12px;"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <div class="math-form">
+                                            <form >
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="dropdown country-dropdown">
+                                                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Select Country
+                                                        </a>
+                                                    
+                                                        <ul class="dropdown-menu country-dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#">Afganistan  +93</a></li>
+                                                        <li><a class="dropdown-item" href="#">Aland Island +358</a></li>
+                                                        <li><a class="dropdown-item" href="#">Albania +355</a></li>
+                                                        <li><a class="dropdown-item" href="#">Bangladesh +880</a></li>
+                                                        <li><a class="dropdown-item" href="#">American Samoa +1684</a></li>
+                                                        <li><a class="dropdown-item" href="#">Andorra +376</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="input-number">
+                                                        <input type="number" name="phone_number" id="phone_number" placeholder="Your Phone Number">
+                                                    </div>
+                                                    
+                                                </div>
+        
+                                                <div class="terms-text">
+                                                    <p>By continuing on this page you agree to BIDDABD Math's
+                                                    <a target="_blank" href="terms-conditions.html" style="color: #5322FF;">T&amp;Cs</a>, acknowledge that you have read the
+                                                    <a target="_blank" href="privacy-policy.html" style="color: #5322FF;">Privacy Policy</a>
+                                                    . Email to opt-out. Your consent is not a condition of any purchase.</p>
+                                                </div>
+                                                <div class="continueBtn">
+                                                    <button disabled="disabled">Continue</button>
+                                                </div>
+                                                
+                                            </form>
+                                        </div>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <div class="emailBtn"><a href="#" style="color: #5322FF;">Or use your email address</a></div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>  
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="col-md-6 pr-0">
+                        <div class="math-journey-right">
+                            <img src="assets/images/getStartedKids.avif" class="img-fluid" alt="getStartedKids">
+                        </div>
+                    </div>
+                </div><!-- journey-item ends  -->
+            </div>
+        </div> <!-- learning-journey-content ends  -->
+      </div><!-- container ends  -->
+  </section>
+  <!-- learning-journey ends  -->
+  <!-- footer starts  -->
+<footer class="math-footer">
+    <div class="container">
+        <div class="title pt-5 mt-5 mb-5">
+            <h2 class="text-center" style="font-size: 14px;line-height: 42px;color: #813589;">ALSO FROM BIDDABD</h2>
+          </div>
+          <div class="math-brand-item">
+            <div class="brand-img">
+              <img src="assets/images/biddabd1.png" class="img-fluid pr-2" alt="brand-img">
+            </div>
+            <div class="brand-img">
+              <img src="assets/images/epicBrand.58ba3582.svg" class="img-fluid pr-2" alt="brand-img">
+            </div>
+            <div class="brand-img">
+              <img src="assets/images/osmoBrand.c4ac9327.svg" class="img-fluid pr-2" alt="brand-img">
+            </div>
+            <div class="brand-img">
+              <img src="assets/images/topprBrand.06890b98.svg" class="img-fluid pr-2" alt="brand-img">
+            </div>
+            <div class="brand-img">
+              <img src="assets/images/tynkerBrand.01a8ea7c.svg" class="img-fluid pr-2" alt="brand-img">
+            </div>
+            <div class="brand-img">
+              <img src="assets/images/osmoBrand.c4ac9327.svg" class="img-fluid pr-2" alt="brand-img">
+            </div>
+            <div class="brand-img">
+              <img src="assets/images/whitehatjrBrand.00a45368.svg" class="img-fluid pr-2" alt="brand-img">
+            </div>
+    
+          </div><!-- brands ends  -->
+      <div class="footer-content">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-logo">
+              <img src="assets/images/biddabd-math-logo.png" alt="logo">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="links mt-4">
+              <h4 class="" style="color: #813589;font-size: 14px;line-height: 14px;">LINKS</h4>
+              <ul style="color:#6a6a86;">
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Blogs</a></li>          
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="socail-link">
+              <h4 class="" style="color: #813589;font-size: 14px;line-height: 14px;">FOLLOW US ON</h4>
+              <ul>
+                <li><a href="#"><img src="assets/images/facebook.227f5100.svg" class="img-fluid" alt="social-icon"></a></li>
+                <li><a href="#"><img src="assets/images/twitter.00efd0e8.svg" class="img-fluid" alt="social-icon"></a></li>
+                <li><a href="#"><img src="assets/images/youtube.6cad46a2.svg" class="img-fluid" alt="social-icon"></a></li>
+                <li><a href="#"><img src="assets/images/linkedIN.c9c0c424.svg" class="img-fluid" alt="social-icon"></a></li> 
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6">
+              <div class="app-icon">
+                <img src="assets/images/appstoreFooter.e70ff73c.svg" class="img-fluid mr-2" alt="brand-img">
+                <img src="assets/images/androidFooter.ced55b97.svg" class="img-fluid" alt="brand-img">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="copy-text text-end mt-4" style="color:#6a6a86; font-size: 14px;line-height: 14px;">
+                <span>©2022, BIDDABD. All Rights Reserved. Design by Tanjina</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+    </div>
+    </footer>
+    <!-- footer ends  -->
+   <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+   <script src="assets/js/popper.min.js"></script>
+   <!-- Bootstrap Dropdown Hover JS -->
+   <!-- <script src="assets/js/bootstrap-dropdownhover.js"></script>
+   <script src="assets/js/bootstrap-dropdownhover.min.js"></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
+   <script src="assets/js/slick.min.js">javascript</script>
+    <!-- jquery waypoints JS -->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <!-- jquery counterup js  -->
+    <script src="assets/js/jquery.counterup.min.js"></script> 
+   <script src="assets/js/main.js"></script>
+</body>
+</html>

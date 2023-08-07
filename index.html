@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="designer" content="Tanjina Akter">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIDDABD</title>
+  <link href="assets/css/bootstrap.5.0.2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" /> -->
+  <!-- Bootstrap Dropdown Hover CSS -->
+  <link href="assets/css/animate.min.css" rel="stylesheet">
+  <!-- <link href="assets/css/bootstrap-dropdownhover.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/bootstrap-dropdownhover.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/css/font-awesomeall.min.css">
+  <!-- slick slider  -->
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.min.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/biddabd-favicon.png"> 
+  <style type="text/css">
+  
+    
+    /* @media only screen and (max-width:800px) {
+        .dropdown-menu .submenu {
+            left: 25%;
+            top: 0px;
+        }
+        .dropdown-menu .multi-menu {
+            left: 95%;
+        }
+        .dropdown-menu .submenu-left {
+            left: 50%;
+        }
+    } */
+</style>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('.dropdown-menu').forEach(function(element) {
+            element.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        })
+
+        if (window.innerWidth < 992) {
+
+            document.querySelectorAll('.dropdown-menu a').forEach(function(element) {
+                element.addEventListener('click', function(e) {
+
+                    let nextEl = this.nextElementSibling;
+                    if (nextEl && nextEl.classList.contains('submenu')) {
+                        e.preventDefault();
+                        if (nextEl.style.display == 'block') {
+                            nextEl.style.display = 'none';
+                        } else {
+                            nextEl.style.display = 'block';
+                        }
+
+                    }
+                });
+            })
+        }
+
+    });
+</script>
+
+</head>
+
+<body>
+  <!-- header slider starts  -->
+  <header class="  main-nav">
+    <div class="header-slider top-bar top-info">
+      <section id="summer-camp-banner" class="summer-camp-banner ">
+        <div class="container">
+          <div class="summer-banner-content">
+            <div class="banner-item">
+              <div class="logo-img">
+                <a href="#">
+                  <img src="assets/images/biddabd-logo.png" class="logo img-fluid" alt="summer camp img"
+                    style="margin: 25px 22px 0 0px;">
+                </a>
+              </div>
+            </div>
+            <div class="group-img">
+              <a href="#">
+                <img src="assets/images/group.png" class="img-fluid" alt="summer camp img">
+              </a>
+            </div>
+            <div class="banner-item">
+              <div class="textImg">
+                <a href="#">
+                  <img src="assets/images/text.png" class="img-fluid" alt="summer camp img">
+                </a>
+              </div>
+              <div class="mobText">
+                <div class="logoMob">
+                  <a href="#">
+                    <img src="assets/images/logo.png" class="img-fluid" alt="summer camp img">
+                  </a>
+                  <img src="assets/images/close.png" class="img-fluid claim-offer-img" alt="">
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="assets/images/mobText.png" class="img-fluid" alt="summer camp img">
+                  </a>
+                </div>
+                <div class="">
+                  <a class="claim-offer-text" href="#">
+                    <p>Claim 40% off now</p>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+            <div class="banner-item claim-offer">
+              <a class="claim-offer-text" href="#">
+                <p>Claim 40% off now</p>
+              </a>
+              <img src="assets/images/close.png" class="img-fluid claim-offer-img" alt="">
+            </div>
+          </div><!-- summer-banner-content ends  -->
+          <!-- <div class="summer-banner-content-hidden">
+           <div class="hidden-content">
+            <div class="group-img">
+              <a href="#">
+                <img src="assets/images/group.png" class="img-fluid" alt="summer camp img">
+              </a>
+            </div>
+            <div class="banner-item">
+              <div class="banner-logo">
+                <a href="#">
+                  <img src="assets/images/logo.png" class="img-fluid" alt="summer camp img">
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="assets/images/mobText.png" class="img-fluid" alt="summer camp img">
+                </a>
+              </div>
+              <div class="banner-item claim-offer">
+                <a href="#"><p>Claim 40% off now</p></a>
+                <img src="assets/images/close.png" class="img-fluid" alt="">
+              </div> 
+            </div>
+               
+           </div> 
+           
+        </div>summer-banner-content ends  -->
+        </div>
+        <div class="virtual-text">
+          <a href="#">
+            <p>Virtual Summer Camp Ages 6-18</p>
+          </a>
+        </div>
+      </section>
+      <section id="fifa-banner" class="fifa-banner">
+        <div class="container">
+          <div class="fifa-banner-content">
+            <div class="banner-item">
+              <div class="logo-img">
+                <a href="#">
+                  <img src="assets/images/fifa_logo_web_bd.png" class="img-fluid" alt="fifa logo">
+                </a>
+              </div>
+            </div>
+            <div class="elements-img">
+              <a href="#">
+                <img src="assets/images/elements.png" class="img-fluid" alt="elements img">
+              </a>
+            </div>
+            <div class="banner-item">
+              <div class="fifaTextImg">
+                <a href="#">
+                  <img src="assets/images/text_web.png" class="img-fluid" alt="summer camp img">
+                </a>
+              </div>
+            </div>
+            <div class="fifa-close-img">
+              <img src="assets/images/close.png" class="img-fluid claim-offer-img" alt="claim-offer-close-img">
+            </div>
+          </div><!-- fifa-banner-content ends  -->
+        </div>
+      </section>
+    </div>
+    <!-- header slider ends  -->
+
+    <!-- header starts  -->
+    
+    <nav class="header navbar navbar-top sticky-top navbar-expand-lg navbar-light ">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/biddhabd-white-logo.png" class="logo img-fluid" alt="logo img">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" data-hover="dropdown"
+          data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft">
+          <ul class="navbar-nav">
+            <li id="subject" class="dropdown nav-item "><a  class="text-white nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" style="
+            margin-right: 10px;">Subjects <span
+                  class="caret"></span></a>
+              <div class="triangle"></div>
+              <ul class="dropdown-menu hover-dropdown-menu subject-dropdown-menu">
+                <div class="menu-title pt-2">
+                  <span>SUBJECTS</span>
+                </div>
+                <li id="sub-dropdown1" class="dropdown hover-dropdown active"><a href="#"><img src="assets/images/math.svg
+                " alt="math icon"><span>Math</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  <ul id="sub-dropdown-menu1" class="sub-dropdown-menu1">
+                    <div class="menu-title pt-4">
+                      <span>MATH</span>
+                    </div>
+                    <li id="sub-dropdown2" class="dropdown hover-dropdown active">
+                      <a href="#">
+                        <img src="assets/images/biddabd-math3.png" alt="grade icon">
+                        <span>Math</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu2" class="sub-dropdown-menu2">
+                        <li>
+                          <a href="#">
+                            <div class="sub-dropdown-content pt-4 mb-4">
+                              <div class="sub-img">
+                                <img src="assets/images/biddabd-math3.png" width="50px" class="img-fluid"
+                                  alt="math live img">
+                              </div>
+                              <div class="sub-text">
+                                <h2 class="mt-3 mb-3">BIDDABD Math</h2>
+                                <ul>
+                                  <li class="text-white rounded text-uppercase bg-purple">GRADES 4 - 8</li>                                 
+                                </ul>
+                                <p class="mt-4">A self paced learning module, with rich visual content, practice quizzes
+                                  and more to give your child an extra edge at Math.</p>
+                                <a href="math.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                                </a>
+                                <div class="grade-img img-right1">
+                                  <img src="assets/images/Math.png " class="img-fluid" alt="Math img">
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu2 -->
+                    </li><!-- sub-dropdown2 -->
+                    <li id="sub-dropdown3" class="dropdown hover-dropdown active">
+                      <a href="#">
+                        <img src="assets/images/biddabd-math3.png" alt="animation icon">
+                        <span>Live 1-on-1</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu3" class="sub-dropdown-menu3">
+                        <li>
+                          <a href="#">
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/biddabd-math3.png" width="50px" class="img-fluid" alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">BIDDABD Live 1-on-1</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">GRADES 1 - 8</li>
+                              </ul>
+                              <p class="mt-4">Personalised, 1-on-1 tutoring classes with expert teachers.</p>
+                              <a href="future-math.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/live1-on-1 (3).png" class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu3 ends -->
+                    </li><!-- sub-dropdown3 ends -->
+                  </ul><!-- sub-dropdown1 ends -->
+                </li> <!-- sub-dropdown1 ends -->
+                <li id="sub-dropdown2-1" class="dropdown hover-dropdown active">
+                  <a href="#">
+                    <img src="assets/images/coding.svg" alt="grade icon">
+                    <span>Coding</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                  <ul id="sub-dropdown-menu2-1" class="sub-dropdown-menu2-1">
+                    <div class="menu-title pt-4">
+                      <span>CODING</span>
+                    </div>
+                    <li id="sub-dropdown2-2" class="dropdown hover-dropdown">
+                      <a href="#">
+                        <img src="assets/images/biddabd-coding2.png" alt="grade icon">
+                        <span>Coding with Tynker</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu2-2" class="sub-dropdown-menu2-2">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/biddabd-coding2.png" width="50px" class="img-fluid" alt="coding img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">BIDDABD Coding with Tynker</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase  bg-purple ">PRE-K - GRADE 12</li>
+                              </ul>
+                              <p class="mt-4">A grade based, self-paced app to give your child a head start in the world
+                                of coding.</p>
+                              <a href="future.code.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/Coding (1).png " class="img-fluid" alt="Coding img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu2-2 ends -->
+                    </li><!-- sub-dropdown2-2 ends -->
+                    <li id="sub-dropdown2-3" class="dropdown hover-dropdown">
+                      <a href="#">
+                        <img src="assets/images/biddabd-coding2.png" alt="animation icon">
+                        <span>
+                          Coding Live 1-on-1 Tynker</span><i class="fa fa-angle-right" aria-hidden="true"
+                          style="
+                        margin-top: 14px !important;
+                    "></i>
+                      </a>
+                      <ul id="sub-dropdown-menu2-3" class="sub-dropdown-menu2-3">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/biddabd-coding2.png" width="50px" class="img-fluid" alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">
+                                BIDDABD Coding Live 1-on-1 with Tynker</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">GRADES 1 - 12</li>
+                              </ul>
+                              <p class="mt-4">Make your child a coding master with personalized 1-on-1 tutoring from
+                                expert teachers.</p>
+                              <a href="future-code.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/CodingLive.png " class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu2-3 ends -->
+                    </li><!-- sub-dropdown2-3 ends-->
+                  </ul><!-- sub-dropdown-menu2-1 ends -->
+                </li><!-- sub-dropdown2-1 ends-->
+                <li id="sub-dropdown3-1" class="dropdown hover-dropdown active">
+                  <a href="#">
+                    <img src="assets/images/english.svg" alt="grade icon">
+                    <span>English</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                  <ul id="sub-dropdown-menu3-1" class="sub-dropdown-menu3-1">
+                    <div class="menu-title pt-4">
+                      <span>ENGLISH</span>
+                    </div>
+                    <li id="sub-dropdown3-2" class="dropdown hover-dropdown">
+                      <a href="#">
+                        <img src="assets/images/bidda-epic.png" alt="animation icon">
+                        <span>Epic from BIDDABD</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu3-2" class="sub-dropdown-menu3-2">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/bidda-epic.png" width="50px" class="img-fluid" alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">Epic from BIDDABD</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">PRE-K - GRADE 7</li>
+                              </ul>
+                              <p class="mt-4">Over 40,000 books, audiobooks & videos to fuel curiosity & reading
+                                confidence.s</p>
+                              <a href="future-code.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/Epic (1).png" class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu2-3 ends -->
+                    </li><!-- sub-dropdown3-2 ends-->
+                  </ul><!-- sub-dropdown-menu3-1 ends -->
+                </li><!-- sub-dropdown3-1 ends-->
+
+                <li id="sub-dropdown4-1" class="dropdown hover-dropdown active">
+                  <a href="#">
+                    <img src="assets/images/music.svg" alt="grade icon">
+                    <span>Music</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                  <ul id="sub-dropdown-menu4-1" class="sub-dropdown-menu4-1">
+                    <div class="menu-title pt-4">
+                      <span>MUSIC</span>
+                    </div>
+                    <li id="sub-dropdown4-2" class="dropdown hover-dropdown">
+                      <a href="#">
+                        <img src="assets/images/biddabd-music2.png" alt="animation icon">
+                        <span>Music Live 1-on-1</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu4-2" class="sub-dropdown-menu4-2">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/biddabd-music2.png" width="50px" class="img-fluid" alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">BIDDABD Music Live 1-on-1</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">FOR KIDS & ADULTS</li>
+                              </ul>
+                              <p class="mt-4">Get live 1-on-1 guitar and piano lessons and fuel your child's passion for
+                                music.</p>
+                              <a href="future-music.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/MusicLive.png" class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu4-2 ends -->
+                    </li><!-- sub-dropdown4-2 ends-->
+                  </ul><!-- sub-dropdown-menu4-1 ends -->
+                </li><!-- sub-dropdown4-1 ends-->
+                <li id="sub-dropdown5-1" class="dropdown hover-dropdown active">
+                  <a href="#">
+                    <img src="assets/images/biddabd-animation4.png" alt="grade icon">
+                    <span>Animation & Video</span><i class="fa fa-angle-right" aria-hidden="true"
+                      style="margin-top: 5px;"></i>
+                  </a>
+                  <ul id="sub-dropdown-menu5-1" class="sub-dropdown-menu5-1">
+                    <div class="menu-title pt-4">
+                      <span>ANIMATION & VIDEO</span>
+                    </div>
+                    <li id="sub-dropdown5-2" class="dropdown hover-dropdown">
+                      <a href="#">
+                        <img src="assets/images/biddabd-animation3.png" alt="animation icon">
+                        <span>Animation & Video Live 1</span><i class="fa fa-angle-right" aria-hidden="true"
+                          style="
+                      margin-top: 12px !important;"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu5-2" class="sub-dropdown-menu5-2">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/biddabd-animation3.png" width="50px" class="img-fluid"
+                                alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">BIDDABD Animation & Video Live 1-on-1</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">GRADES 3 - 7</li>
+                              </ul>
+                              <p class="mt-4">Crafted by professional artists, animators, and filmmakers to untap your
+                                child's creative potential.</p>
+                              <a href="future-art.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/AnimationLive.png" class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu5-2 ends -->
+                    </li><!-- sub-dropdown5-2 ends-->
+                  </ul><!-- sub-dropdown-menu5-1 ends -->
+                </li><!-- sub-dropdown5-1 ends-->
+              </ul><!-- grade-dropdown-menu ends -->
+            </li><!-- grade-dropdown ends -->
+            <li id="grade" class="dropdown nav-item"><a class="text-white nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Grades<span class="caret"></span></a>
+              <div class="triangle"></div>
+              <ul class="dropdown-menu hover-dropdown-menu">
+                <div class="menu-title pt-2">
+                  <span>GRADES</span>
+                </div>
+                <li id="sub-dropdown1" class="dropdown hover-dropdown active"><a href="#"><img src="assets/images/grade1.svg
+                " alt="math icon"><span>Pre-K to Grade 3</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  <ul id="sub-dropdown-menu1" class="sub-dropdown-menu1">
+                    <div class="menu-title pt-4">
+                      <span>PRE-K TO GRADE 3</span>
+                    </div>
+                    <li id="sub-dropdown2" class="dropdown hover-dropdown active">
+                      <a href="#">
+                        <img src="assets/images/biddabd-live12.png" alt="grade icon">
+                        <span>Live 1-on-1</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu2" class="sub-dropdown-menu2">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/biddabd-live12.png" width="50px" class="img-fluid"
+                                alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">BIDDABD Live 1-on-1</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">coding</li>
+                                <li class="text-white rounded text-uppercase  bg-purple ">math</li>
+                                <li class="text-white rounded text-uppercase bg-purple ">music</li> <br>
+                                <li class="text-white rounded text-uppercase  bg-purple">animation &amp; video</li>
+                              </ul>
+                              <p class="mt-4">Personalised, 1-on-1 tutoring classes with expert teachers.</p>
+                              <a href="future-math.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/live1-on-1 (3).png " class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu2 -->
+                    </li><!-- sub-dropdown2 -->
+                    <li id="sub-dropdown3" class="dropdown hover-dropdown active">
+                      <a href="#">
+                        <img src="assets/images/biddabd-coding2.png" alt="animation icon">
+                        <span>Coding with Tynker</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu3" class="sub-dropdown-menu3">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/biddabd-coding2.png" width="50px" class="img-fluid" alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">BIDDABD Coding with Tynker</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">coding</li>
+                              </ul>
+                              <p class="mt-4">A grade based, self-paced app to give your child a head start in the world
+                                of coding.</p>
+                              <a href="future-code.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/Coding (1).png" class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu3 ends -->
+                    </li><!-- sub-dropdown3 ends -->
+                    <li id="sub-dropdown4" class="dropdown hover-dropdown active">
+                      <a href="#">
+                        <img src="assets/images/bidda-epic.png" alt="animation icon"><i class="fa fa-angle-right"
+                          aria-hidden="true"></i>
+                        <span>Epic</span>
+                      </a>
+                      <ul id="sub-dropdown-menu4" class="sub-dropdown-menu4">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/bidda-epic.png" width="50px" class="img-fluid" alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">Epic</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">reading</li>
+                              </ul>
+                              <p class="mt-4">Over 40,000 books, audiobooks & videos to fuel curiosity & reading
+                                confidence.</p>
+                              <a href="future-code.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/Epic (1).png" class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu4 ends -->
+                    </li><!-- sub-dropdown4 ends -->
+                  </ul><!-- sub-dropdown1 ends -->
+                </li> <!-- sub-dropdown1 ends -->
+                <li id="sub-dropdown2-1" class="dropdown hover-dropdown active">
+                  <a href="#">
+                    <img src="assets/images/grade2.svg" alt="grade icon">
+                    <span>Grade 4 to 8</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                  <ul id="sub-dropdown-menu2-1" class="sub-dropdown-menu2-1">
+                    <div class="menu-title pt-4">
+                      <span>GRADE 4 TO 8</span>
+                    </div>
+                    <li id="sub-dropdown2-2" class="dropdown hover-dropdown">
+                      <a href="#">
+                        <img src="assets/images/biddabd-math3.png" alt="grade icon">
+                        <span>Math</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu2-2" class="sub-dropdown-menu2">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/biddabd-math3.png" width="50px" class="img-fluid" alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">BIDDABD Math</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase  bg-purple ">math</li>
+                              </ul>
+                              <p class="mt-4">A self paced learning module, with rich visual content, practice quizzes
+                                and more to give your child an extra edge at Math.</p>
+                              <a href="future-math.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/Math.png " class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu2-2 ends -->
+                    </li><!-- sub-dropdown2-2 ends -->
+                    <li id="sub-dropdown2-3" class="dropdown hover-dropdown">
+                      <a href="#">
+                        <img src="assets/images/biddabd-live12.png" alt="animation icon">
+                        <span>Live 1-on-1</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu2-3" class="sub-dropdown-menu2-3">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/biddabd-live12.png" width="50px" class="img-fluid"
+                                alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">BIDDABD Live 1-on-1</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">coding</li>
+                                <li class="text-white rounded text-uppercase  bg-purple ">math</li>
+                                <li class="text-white rounded text-uppercase bg-purple ">music</li> <br>
+                                <li class="text-white rounded text-uppercase  bg-purple">animation &amp; video</li>
+                              </ul>
+                              <p class="mt-4">Personalised, 1-on-1 tutoring classes with expert teachers.</p>
+                              <a href="math.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/live1-on-1 (3).png " class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu2-3 ends -->
+                    </li><!-- sub-dropdown2-3 ends-->
+                    <li id="sub-dropdown2-4" class="dropdown hover-dropdown">
+                      <a href="#">
+                        <img src="assets/images/biddabd-coding2.png" alt="animation icon">
+                        <span>Coding with Tynker</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu2-4" class="sub-dropdown-menu2-4">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/biddabd-coding2.png" width="50px" class="img-fluid" alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">BIDDABD Coding with Tynker</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">coding</li>
+                                <!-- <li class="text-white rounded text-uppercase  bg-purple ">math</li>
+                              <li class="text-white rounded text-uppercase bg-purple ">music</li> <br>
+                              <li class="text-white rounded text-uppercase  bg-purple">animation &amp; video</li> -->
+                              </ul>
+                              <p class="mt-4">A grade based, self-paced app to give your child a head start in the world
+                                of coding.</p>
+                              <a href="future-code.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/Coding (1).png" class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu2-4 ends -->
+                    </li><!-- sub-dropdown2-4 ends-->
+                    <li id="sub-dropdown2-5" class="dropdown hover-dropdown">
+                      <a href="#">
+                        <img src="assets/images/bidda-epic.png" alt="animation icon">
+                        <span>Epic</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu2-5" class="sub-dropdown-menu2-5">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/bidda-epic.png" width="50px" class="img-fluid" alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">Epic</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">reading</li>
+                              </ul>
+                              <p class="mt-4">Over 40,000 books, audiobooks & videos to fuel curiosity & reading
+                                confidence.</p>
+                              <a href="future-code.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/Epic (1).png" class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu2-5 ends -->
+                    </li><!-- sub-dropdown2-5 ends-->
+                  </ul><!-- sub-dropdown-menu2-1 ends -->
+                </li><!-- sub-dropdown2-1 ends-->
+                <li id="sub-dropdown3-1" class="dropdown hover-dropdown active">
+                  <a href="#">
+                    <img src="assets/images/grade3.svg" alt="grade icon">
+                    <span>Grade 9 to 12</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                  <ul id="sub-dropdown-menu3-1" class="sub-dropdown-menu3-1">
+                    <div class="menu-title pt-4">
+                      <span>GRADE 9 TO 12</span>
+                    </div>
+                    <li id="sub-dropdown3-2" class="dropdown hover-dropdown">
+                      <a href="#">
+                        <img src="assets/images/biddabd-live12.png" alt="animation icon">
+                        <span>Live 1-on-1</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu3-2" class="sub-dropdown-menu3-2">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/biddabd-live12.png" width="50px" class="img-fluid"
+                                alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">BIDDABD Live 1-on-1</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">coding</li>
+                                <li class="text-white rounded text-uppercase  bg-purple ">math</li>
+                                <li class="text-white rounded text-uppercase bg-purple ">music</li> <br>
+                                <li class="text-white rounded text-uppercase  bg-purple">animation &amp; video</li>
+                              </ul>
+                              <p class="mt-4">Personalised, 1-on-1 tutoring classes with expert teachers.</p>
+                              <a href="math.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/live1-on-1 (3).png " class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu2-3 ends -->
+                    </li><!-- sub-dropdown3-2 ends-->
+                    <li id="sub-dropdown3-3" class="dropdown hover-dropdown">
+                      <a href="#">
+                        <img src="assets/images/biddabd-coding2.png" alt="animation icon">
+                        <span>Coding with Tynker</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </a>
+                      <ul id="sub-dropdown-menu3-3" class="sub-dropdown-menu3-3">
+                        <li>
+                          <a href="#"></a>
+                          <div class="sub-dropdown-content pt-4 mb-4">
+                            <div class="sub-img">
+                              <img src="assets/images/biddabd-coding2.png" width="50px" class="img-fluid" alt="math live img">
+                            </div>
+                            <div class="sub-text">
+                              <h2 class="mt-3 mb-3">BIDDABD Coding with Tynker</h2>
+                              <ul>
+                                <li class="text-white rounded text-uppercase bg-purple">coding</li>
+                                <!-- <li class="text-white rounded text-uppercase  bg-purple ">math</li>
+                              <li class="text-white rounded text-uppercase bg-purple ">music</li> <br>
+                              <li class="text-white rounded text-uppercase  bg-purple">animation &amp; video</li> -->
+                              </ul>
+                              <p class="mt-4">A grade based, self-paced app to give your child a head start in the world
+                                of coding.</p>
+                              <a href="future-code.html" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                            font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                          float: none;font-size: 13px;color: #005BA4;"></i>
+                              </a>
+                              <div class="grade-img img-right1">
+                                <img src="assets/images/Coding (1).png" class="img-fluid" alt="Math img">
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                        </li>
+                      </ul><!-- sub-dropdown-menu3-3 ends -->
+                    </li><!-- sub-dropdown3-3 ends-->
+                  </ul><!-- sub-dropdown-menu3-1 ends -->
+                </li><!-- sub-dropdown3-1 ends-->
+              </ul><!-- grade-dropdown-menu ends -->
+            </li><!-- grade-dropdown ends -->
+          </ul>
+          <!-- grade-dropdown ends -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 main-menu">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="assets/images/worldwide.svg" alt="worldwide icon">
+                <span>Global</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/uk.svg" alt="global icon">
+                    <span>UK</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/india.svg" alt="global icon">
+                    <span>India</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/Canada.svg" alt="global icon">
+                    <span>Canada</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/brazil.svg" alt="global icon">
+                    <span>Brazil</span>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+           <!-- mobile menu  -->
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown mobile-menu-subject">
+              <a href="#" class="nav-link dropdown-toggle text-white fs-5" data-bs-toggle="dropdown">Subject</a>
+              <ul class="dropdown-menu">
+                  <li class="mobile-drop-item"><a href="#" class="dropdown-item">Math &raquo;</a>
+                      <ul class="dropdown-menu submenu">
+                          <li class="mobile-drop-item"><a href="math.html" class="dropdown-item">BIDDABD Math</a></li>
+                          <li class="mobile-drop-item"><a href="future-math.html" class="dropdown-item">BIDDABD Live 1-on-1 </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="mobile-drop-item"><a href="#" class="dropdown-item">Coding &raquo;</a>
+                      <ul class="dropdown-menu submenu">
+                          <li class="mobile-drop-item"><a href="future-code.html" class="dropdown-item">Coding with Tynker</a></li>
+                          <li class="mobile-drop-item"><a href="future-code.html" class="dropdown-item">Coding Live 1-on-1 </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="mobile-drop-item"><a href="#" class="dropdown-item">Music &raquo;</a>
+                      <ul class="dropdown-menu submenu">
+                          <li class="mobile-drop-item"><a href="future-music.html" class="dropdown-item">Music Live 1-on-1</a></li>
+                      </ul>
+                  </li>
+                  <li class="mobile-drop-item"><a href="#" class="dropdown-item">Animation & Video &raquo;</a>
+                      <ul class="dropdown-menu submenu">
+                          <li class="mobile-drop-item"><a href="future-art.html" class="dropdown-item">Animation & Video Live 1</a></li>
+                      </ul>
+                  </li>                 
+              </ul>
+          </li> <!-- subject mobile-menu ends  -->
+          <li class="nav-item dropdown mobile-menu-subject">
+              <a href="#" class="nav-link dropdown-toggle text-white fs-5" data-bs-toggle="dropdown">Grade</a>
+              <ul class="dropdown-menu">
+                  <li class="mobile-drop-item"><a href="#" class="dropdown-item">Pre-K to Grade 3 &raquo;</a>
+                      <ul class="dropdown-menu submenu">
+                          <li class="mobile-drop-item"><a href="math.html" class="dropdown-item">Math</a></li>
+                          <li class="mobile-drop-item"><a href="future-math.html" class="dropdown-item">Future math </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="mobile-drop-item"><a href="#" class="dropdown-item">Grade 4 to 8 &raquo;</a>
+                      <ul class="dropdown-menu submenu">
+                          <li class="mobile-drop-item"><a href="future-code.html" class="dropdown-item">Epic</a></li>
+                          <li class="mobile-drop-item"><a href="math.html" class="dropdown-item">Live 1-on-1 </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="mobile-drop-item"><a href="#" class="dropdown-item">GRADE 9 TO 12 &raquo;</a>
+                      <ul class="dropdown-menu submenu">
+                          <li class="mobile-drop-item"><a href="future-music.html" class="dropdown-item">Music Live 1-on-1</a></li>
+                      </ul>
+                  </li>
+                  <li class="mobile-drop-item"><a href="#" class="dropdown-item">Animation & Video &raquo;</a>
+                      <ul class="dropdown-menu submenu">
+                          <li class="mobile-drop-item"><a href="future-art.html" class="dropdown-item">Animation & Video Live 1</a></li>
+                      </ul>
+                  </li>                 
+              </ul>
+          </li> <!-- grade mobile-menu ends  -->
+      </ul>
+      
+        </div>
+       
+      </div>
+    </nav>
+  </header>
+  <!-- header ends  -->
+  <!-- home starts  -->
+  <section id="home" class="home section-padding-top section-padding-bottom">
+    <div class="container">
+      <div class="row  justify-content-center align-items-center ">
+        <!-- <div class="home-content"> -->
+          <div class="col-lg-6">
+            <div class="home-left ">
+              <h1 class="">Welcome to the <br>future of learning</h1>
+              <p>BIDDABD makes learning engaging & effective by leveraging deep pedagogy & cutting edge technology. With
+                offerings ranging from adaptive self-learning courses on apps & web to personalised 1-on-1 classes with
+                expert teachers for ages 4-18+, we have programs for every learner.</p>
+              <div class="site-btn">
+                <button class="btn
+              "> <span> Explore Learning Programs</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="home-right">
+              <img src="assets/images/biddabd_header_image_1.png" class="img-fluid" alt="header_image_1">
+            </div>
+          </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="web-bg">
+      <!-- <img src="assets/images/wave (1).svg" alt=""> -->
+    </div>
+  </section>
+  <!-- home ends  -->
+  <!-- trust-learn starts  -->
+  <section id="trust" class="trust section-padding-bottom">
+    <div class="container">
+      <section>
+        <div class="container">
+          <div class="trust-content">
+            <div class="title mb-5">
+              <h2 class="text-center" style="
+        ">Trusted by 150 million+ learners</h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-6  d-flex justify-content-xl-around
+            text-center trust-left-content">
+                <div class="trust-left">
+                  <img src="assets/images/trust_1.svg" alt="trust img">
+                  <h5>Live and <br>
+                    personalised</h5>
+                </div>
+                <div class="trust-left">
+                  <img src="assets/images/trust_2.svg" alt="trust img">
+                  <h5>Top qualified
+                    <br>
+                    teachers</h5>
+                </div>
+              </div>
+              <div class="col-lg-6  d-flex justify-content-xl-around
+            text-center trust-left-content">
+                <div class="trust-left">
+                  <img src="assets/images/trust_1.svg" alt="trust img">
+                  <h5>Live and <br>
+                    personalised</h5>
+                </div>
+                <div class="trust-left">
+                  <img src="assets/images/trust_2.svg" alt="trust img">
+                  <h5>Top qualified
+                    <br>
+                    teachers</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- trust-learn ends  -->
+  <!-- learning starts  -->
+  <section id="learning" class="learning section-padding-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="title mb-5">
+            <h2 class="text-center" style="
+      ">A learning program for every student</h2>
+          </div>
+          <div class="learning-content">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item grade-item mr-2" role="presentation">
+                <button class="nav-link active" id="pills-pre-k-grade-3-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-pre-k-grade-3" type="button" role="tab" aria-controls="pills-pre-k-grade-3"
+                  aria-selected="true">Pre-K to Grade 3</button>
+              </li>
+              <li class="nav-item grade-item mr-2" role="presentation">
+                <button class="nav-link" id="pills-grade-4-tab" data-bs-toggle="pill" data-bs-target="#pills-grade-4"
+                  type="button" role="tab" aria-controls="pills-grade-4" aria-selected="false">Grade 4 to 8</button>
+              </li>
+              <li class="nav-item grade-item" role="presentation">
+                <button class="nav-link" id="pills-grade-9-tab" data-bs-toggle="pill" data-bs-target="#pills-grade-9"
+                  type="button" role="tab" aria-controls="pills-grade-9" aria-selected="false">Grade 9 to 12</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-pre-k-grade-3" role="tabpanel"
+                aria-labelledby="pills-pre-k-grade-3-tab">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a href="#">
+                        <div class="grade-content mb-4">
+                          <div>
+                            <img src="assets/images/biddabd-live12.png" class="img-fluid" alt="math live img">
+                          </div>
+                          <div class="grade-text">
+                            <h2 class="mt-3 mb-3">BIDDABD Live <br> 1-on-1</h2>
+                            <ul>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">coding</li>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">math</li>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">music</li> <br>
+                              <li class="text-sm rounded-md mt-2 px-2 py-1 text-uppercase bg-purple_byjus">animation
+                                &amp; video</li>
+                            </ul>
+                            <p class="mt-4">Personalised, 1-on-1 tutoring <br> classes with expert teachers.</p>
+                            <a href="#" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                        font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                      float: none;font-size: 13px;color: #005BA4;"></i>
+                            </a>
+                            <div class="grade-img grade-img-right1">
+                              <img src="assets/images/live1-on-1 (3).png " class="img-fluid" alt="Math img">
+                            </div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a href="#">
+                        <div class="grade-content mb-4">
+                          <div>
+                            <img src="assets/images/biddabd-coding2.png" class="img-fluid" alt="math live img">
+                          </div>
+                          <div class="grade-text">
+                            <h2 class="mt-3 mb-3">BIDDABD Coding <br> with Tynker</h2>
+                            <ul>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">coding</li>
+
+                            </ul>
+                            <p class="mt-4">A grade based, self-paced app <br> to give your child a head start <br> in
+                              the world of coding.</p>
+                            <a href="#" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                        font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                      float: none;font-size: 13px;color: #005BA4;"></i>
+                            </a>
+                            <div class="grade-img grade-img-right2">
+                              <img src="assets/images/Coding (1).png " class="img-fluid" alt="Math img">
+                            </div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a href="#">
+                        <div class="grade-content mb-4">
+                          <div>
+                            <img src="assets/images/bidda-epic.png" class="img-fluid" alt="epic img">
+                          </div>
+                          <div class="grade-text">
+                            <h2 class="mt-3 mb-3">Epic from <br> BIDDABD</h2>
+                            <ul>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">reading</li>
+
+                            </ul>
+                            <p class="mt-4">Over 40,000 books, <br> audiobooks & videos to fuel <br> curiosity & reading
+                              confidence.</p>
+                            <a href="#" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                        font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                      float: none;font-size: 13px;color: #005BA4;"></i>
+                            </a>
+                            <div class="grade-img grade-img-right1">
+                              <img src="assets/images/Epic (1).png " class="img-fluid" alt="Math img">
+                            </div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-grade-4" role="tabpanel" aria-labelledby="pills-grade-4-tab">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a href="#">
+                        <div class="grade-content mb-4">
+                          <div>
+                            <img src="assets/images/biddabd-coding2.png" class="img-fluid" alt="math live img">
+                          </div>
+                          <div class="grade-text">
+                            <h2 class="mt-3 mb-3">BIDDABD Math</h2>
+                            <ul>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">Math</li>
+
+                            </ul>
+                            <p class="mt-4">A self paced learning module, <br> with rich visual content, <br> practice
+                              quizzes and more to <br> give your child an extra edge at <br> Math.</p>
+                            <a href="#" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                        font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                      float: none;font-size: 13px;color: #005BA4;"></i>
+                            </a>
+                            <div class="grade-img grade-img-right2">
+                              <img src="assets/images/Math.png" class="img-fluid" alt="Math img">
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a href="#">
+                        <div class="grade-content mb-4">
+                          <div>
+                            <img src="assets/images/biddabd-live12.png" class="img-fluid" alt="math live img">
+                          </div>
+                          <div class="grade-text">
+                            <h2 class="mt-3 mb-3">BIDDABD Live <br> 1-on-1</h2>
+                            <ul>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">coding</li>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">math</li>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">music</li> <br>
+                              <li class="text-sm rounded-md mt-2 px-2 py-1 text-uppercase bg-purple_byjus">animation
+                                &amp; video</li>
+                            </ul>
+                            <p class="mt-4">Personalised, 1-on-1 tutoring <br> classes with expert teachers.</p>
+                            <a href="#" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                        font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                      float: none;font-size: 13px;color: #005BA4;"></i>
+                            </a>
+                            <div class="grade-img grade-img-right1">
+                              <img src="assets/images/live1-on-1 (3).png " class="img-fluid" alt="Math img">
+                            </div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a href="#">
+                        <div class="grade-content mb-4">
+                          <div>
+                            <img src="assets/images/biddabd-coding2.png" class="img-fluid" alt="math live img">
+                          </div>
+                          <div class="grade-text">
+                            <h2 class="mt-3 mb-3">BIDDABD Coding <br> with Tynker</h2>
+                            <ul>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">coding</li>
+
+                            </ul>
+                            <p class="mt-4">A grade based, self-paced app <br> to give your child a head start <br> in
+                              the world of coding.</p>
+                            <a href="#" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                        font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                      float: none;font-size: 13px;color: #005BA4;"></i>
+                            </a>
+                            <div class="grade-img grade-img-right2">
+                              <img src="assets/images/Coding (1).png " class="img-fluid" alt="Math img">
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a href="#">
+                        <div class="grade-content mb-4">
+                          <div>
+                            <img src="assets/images/bidda-epic.png" class="img-fluid" alt="epic img">
+                          </div>
+                          <div class="grade-text">
+                            <h2 class="mt-3 mb-3">Epic from <br> BIDDABD</h2>
+                            <ul>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">reading</li>
+
+                            </ul>
+                            <p class="mt-4">Over 40,000 books, <br> audiobooks & videos to fuel <br> curiosity & reading
+                              confidence.</p>
+                            <a href="#" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                        font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                      float: none;font-size: 13px;color: #005BA4;"></i>
+                            </a>
+                            <div class="grade-img grade-img-right1">
+                              <img src="assets/images/Epic (1).png " class="img-fluid" alt="Math img">
+                            </div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-grade-9" role="tabpanel" aria-labelledby="pills-grade-9-tab">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a href="#">
+                        <div class="grade-content mb-4">
+                          <div>
+                            <img src="assets/images/biddabd-live12.png" class="img-fluid" alt="math live img">
+                          </div>
+                          <div class="grade-text">
+                            <h2 class="mt-3 mb-3">BIDDABD Live <br> 1-on-1</h2>
+                            <ul>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">coding</li>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">math</li>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">music</li> <br>
+                              <li class="text-sm rounded-md mt-2 px-2 py-1 text-uppercase bg-purple_byjus">animation
+                                &amp; video</li>
+                            </ul>
+                            <p class="mt-4">Personalised, 1-on-1 tutoring <br> classes with expert teachers.</p>
+                            <a href="#" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                        font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                      float: none;font-size: 13px;color: #005BA4;"></i>
+                            </a>
+                            <div class="grade-img grade-img-right1">
+                              <img src="assets/images/live1-on-1 (3).png " class="img-fluid" alt="Math img">
+                            </div>
+                          </div>
+
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a href="#">
+                        <div class="grade-content mb-4">
+                          <div>
+                            <img src="assets/images/biddabd-coding2.png" class="img-fluid" alt="math live img">
+                          </div>
+                          <div class="grade-text">
+                            <h2 class="mt-3 mb-3">BIDDABD Coding <br> with Tynker</h2>
+                            <ul>
+                              <li class="text-sm rounded-md px-2 py-1 text-uppercase bg-purple_byjus">coding</li>
+
+                            </ul>
+                            <p class="mt-4">A grade based, self-paced app <br> to give your child a head start <br> in
+                              the world of coding.</p>
+                            <a href="#" class="text-uppercase" style="color: #005BA4 !important;font-size: 15px !important;
+                        font-weight: 600;">Explore <i class="fa fa-angle-right" aria-hidden="true" style="
+                      float: none;font-size: 13px;color: #005BA4;"></i>
+                            </a>
+                            <div class="grade-img grade-img-right2">
+                              <img src="assets/images/Coding (1).png " class="img-fluid" alt="Math img">
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- learning ends  -->
+  <!-- available-platform starts  -->
+  <section class="available" id="available">
+    <div class="container">
+      <section id="available-platform" class="available-platform section-padding-bottom">
+        <div class="container">
+          <div class="title mt-5 mb-3">
+            <h2 class="" >Available on <br> all Platforms</h2>
+            <p class="" style="font-size: 22px;color: #A4A4B5;
+          margin: 20px 0;">Our products can be used on all devices</p>
+          </div>
+          <div class="row available-content">
+            <div class="col-lg-6">
+              <div class="platform-img1">
+                <img src="assets/images/devices.svg" alt="devices img" style="width: 279px;">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="platform-img2 mt-4">
+                <img src="assets/images/handelDevice.png" alt="handel device img"
+                  style="width: 450px;margin-top: -134px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- available-platform ends  -->
+  <!-- play-learning starts  -->
+  <section id="play-learning" class="play-learning section-padding-bottom">
+    <div class="container">
+      <section>
+        <div class="container">
+          <div class="trust-content play-learning-content">
+            <div class="row play-learning-item">
+              <div class="col-lg-6  ">
+                <div class="play-learning-left ml-5">
+                  <img src="assets/images/bidda-osmo.png" alt="osmoby img">
+                  <h3 style="font-size: 30px; line-height: 46px; ">Play-Based Learning</h3>
+                  <p>Fuel your child’s interest in reading, math, creativity, and more <br> with play-based games!</p>
+                  <a href="#" class="text-uppercase"
+                    style="color: #000 !important;font-size: 15px !important;font-weight: 600;">Explore <i
+                      class="fa fa-angle-right" aria-hidden="true" style="
+                      float: none;font-size: 13px;color: #000;"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="play-learning-right ml-5 mt-3">
+                  <img src="assets/images/osmoBg.png" class="img-fluid" alt="trust img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- play-learning ends  -->
+  <!-- engaging-learn starts  -->
+  <section id="engaging" class="engaging section-padding-bottom">
+    <div class="container">
+      <div class="title mb-5">
+        <h2 class="text-center" >Engaging courses across subjects</h2>
+      </div>
+      <div class="engaging-courses">
+        <div class="row">
+          <div class="col-lg-5  d-flex justify-content-xl-around
+        text-center engaging-left-content">
+            <div class="engaging-left mr-4 mb-4">
+              <img src="assets/images/math.svg" class="img-fluid" alt="engaging img">
+              <h5>Math</h5>
+            </div>
+            <div class="engaging-left">
+              <img src="assets/images/coding.svg" class="img-fluid" alt="engaging img">
+              <h5>Coding</h5>
+            </div>
+          </div>
+          <div class="col-lg-5  d-flex justify-content-xl-around
+        text-center engaging-left-content">
+            <div class="engaging-left mr-4 mb-4">
+              <img src="assets/images/reading.svg" class="img-fluid" alt="engaging img">
+              <h5>English</h5>
+            </div>
+            <div class="engaging-left">
+              <img src="assets/images/music.svg" class="img-fluid" alt="engaging img">
+              <h5>Music</h5>
+            </div>
+
+          </div>
+          <div class="col-lg-2  d-flex justify-content-xl-around
+        text-center engaging-left-content">
+            <div class="engaging-left">
+              <img src="assets/images/play (1).svg" class="img-fluid" alt="engaging img">
+              <h5>Animation & <br> Video</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- engaging-learn ends  -->
+  <!-- students-counting starts  -->
+  <section id="engaging" class="engaging section-padding-bottom">
+    <div class="container">
+      <div class="title mb-5">
+        <h2 class="text-center" >Millions of happy students and counting</h2>
+      </div>
+      <div class="students-counting">
+        <div class="students-counting-content">
+          <div class="student-img">
+            <img src="assets/images/9.jpeg" class="img-fluid" alt="student img">
+          </div>
+          <div class="student-text">
+            <h4 class="text-2xl">Chiamaka</h4>
+            <p class="text-grey_charcoal_40 mt-3">You are learning and you're having fun at the same time. And it's
+              almost like you are playing a game.</p>
+          </div>
+        </div>
+        <div class="students-counting-content">
+          <div class="student-img">
+            <img src="assets/images/1.jpeg" class="img-fluid" alt="student img">
+          </div>
+          <div class="student-text">
+            <h4 class="text-2xl">Alex</h4>
+            <p class="text-grey_charcoal_40 mt-3">Learning coding is like learning a new language. If you get the right
+              teacher, you can learn it very easily.</p>
+          </div>
+        </div>
+        <div class="students-counting-content">
+          <div class="student-img">
+            <img src="assets/images/7.jpeg" class="img-fluid" alt="student img">
+          </div>
+          <div class="student-text">
+            <h4 class="text-2xl">Jake</h4>
+            <p class="text-grey_charcoal_40 mt-3">What I'm doing with block coding, HTML and mobile apps is I'm actually
+              making publishable apps which is really cool!</p>
+          </div>
+        </div>
+        <div class="students-counting-content">
+          <div class="student-img">
+            <img src="assets/images/8.jpeg" class="img-fluid" alt="student img">
+          </div>
+          <div class="student-text">
+            <h4 class="text-2xl">Tyler</h4>
+            <p class="text-grey_charcoal_40 mt-3">My teacher and I are coding a new space simulator comparing the
+              gravities of black holes to Mars. </p>
+          </div>
+        </div>
+        <div class="students-counting-content">
+          <div class="student-img">
+            <img src="assets/images/3.jpeg" class="img-fluid" alt="student img">
+          </div>
+          <div class="student-text">
+            <h4 class="text-2xl">Anay</h4>
+            <p class="text-grey_charcoal_40 mt-3">My skills have really improved!...I also like coding because it serves
+              as a fun way to learn math, which is one of my least favorite subjects.</p>
+          </div>
+        </div>
+        <div class="students-counting-content">
+          <div class="student-img">
+            <img src="assets/images/11.jpeg" class="img-fluid" alt="student img">
+          </div>
+          <div class="student-text">
+            <h4 class="text-2xl">Chris</h4>
+            <p class="text-grey_charcoal_40 mt-3">I really like how there’s different courses that you can learn with
+              and how there are contests like the Summer Code Jam that you can win cool prizes.</p>
+          </div>
+        </div>
+        <div class="students-counting-content">
+          <div class="student-img">
+            <img src="assets/images/14.jpeg" class="img-fluid" alt="student img">
+          </div>
+          <div class="student-text">
+            <h4 class="text-2xl">Tessa</h4>
+            <p class="text-grey_charcoal_40 mt-3">Why do I like to code? It’s just fun! It’s fun to create your own
+              games – you get to look at all these other games, it’s really fun. It’s exciting to know that you can
+              create your own game.</p>
+          </div>
+        </div>
+        <div class="students-counting-content">
+          <div class="student-img">
+            <img src="assets/images/8.jpeg" class="img-fluid" alt="student img">
+          </div>
+          <div class="student-text">
+            <h4 class="text-2xl">Sai</h4>
+            <p class="text-grey_charcoal_40 mt-3">The thing about Tynker is that there are so many ways you can channel
+              your creativity into code, so many different types of projects, and the code is clean and easy to
+              understand.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- students-counting ends  -->
+  <!-- education starts  -->
+  <section id="education" class="education bg-white section-padding-bottom">
+    <div class="container">
+      <div class="row eduction-content">
+        <div class="col-lg-6">
+          <div class="education-img1">
+            <img src="assets/images/kids.png" class="img-fluid" alt="education img"
+              style="width: 450px;margin-top: 75px;">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="eduction-img2">
+            <img src="assets/images/biddabd-education_for_all1.png" class="img-fluid" alt="handel device img">
+            <div class="education-item">
+              <div class="eduction-text mt-3 mb-4">
+                <span class="">3.4 Million+ children connected to education within a year.</span>
+              </div>
+              <div class="eduction-text mt-3 mb-4">
+                <span class="">On a mission to empower 10 Million+ children by 2025.</span>
+              </div>
+              <div class="eduction-text mt-3 mb-4">
+                <span class="">Making dreams come true with the power of education.</span>
+              </div>
+            </div>
+            <button class="knowMoreBtn">Know more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- education ends  -->
+  <!-- investors starts  -->
+  <section id="engaging" class="engaging section-padding-top section-padding-bottom">
+    <div class="container">
+      <div class="title mb-5">
+        <h2 class="text-center" >Our Investors</h2>
+        <p class="text-center" style="font-size: 16px; line-height: 24px;">50+ Investors who have been strong partners
+          in our growth story</p>
+      </div>
+      <div class="investors-item">
+        <div class="investors-content bg-white text-center">
+          <div class="investors-img">
+            <img src="assets/images/Chan_Zuck.png" class="img-fluid" alt="investors img" style="margin: 0 auto">
+            <img src="assets/images/double-quotes.svg" class="img-fluid" alt="investors img" style="margin: 0 auto">
+          </div>
+          <div class="investors-text">
+            <p class="text-black text-center text-0.2xl pb-12">The Chan Zuckerberg initiative supports innovative models
+              of learning wherever they are around the world. BIDDABD represents an opportunity to help even more
+              students develop a love for learning and unlock their potential.</p>
+            <h4 class="text-2xl">Dr. Priscilla Chan and Mark Zuckerberg</h4>
+          </div>
+        </div>
+        <div class="investors-content bg-white text-center">
+          <div class="investors-img">
+            <img src="assets/images/General_At.png" class="img-fluid" alt="investors img" style="margin: 0 auto">
+            <img src="assets/images/double-quotes.svg" class="img-fluid" alt="investors img" style="margin: 0 auto">
+          </div>
+          <div class="investors-text">
+            <p class="text-black text-center text-0.2xl pb-12">General Atlantic firmly believes in helping high quality
+              companies achieve long-term success. We are confident that BIDDABD will redefine the learning landscape for
+              students globally.</p>
+            <h4 class="text-2xl">Sandeep Naik</h4>
+          </div>
+        </div>
+        <div class="investors-content bg-white text-center">
+          <div class="investors-img">
+            <img src="assets/images/Silverlake.png" class="img-fluid" alt="investors img" style="margin: 0 auto">
+            <img src="assets/images/double-quotes.svg" class="img-fluid" alt="investors img" style="margin: 0 auto">
+          </div>
+          <div class="investors-text">
+            <p class="text-black text-center text-0.2xl pb-12">Our partnership with Byju and his impressive team in
+              their mission to help children in India and around the world achieve their true potential. We look forward
+              to forging new partnerships and continue to cultivate a comprehensive ecosystem of innovative educational
+              offerings.</p>
+            <h4 class="text-2xl">Greg Mondre</h4>
+          </div>
+        </div>
+        <div class="investors-content bg-white text-center">
+          <div class="investors-img">
+            <img src="assets/images/Verlinvest.png" class="img-fluid" alt="investors img" style="margin: 0 auto">
+            <img src="assets/images/double-quotes.svg" class="img-fluid" alt="investors img" style="margin: 0 auto">
+          </div>
+          <div class="investors-text">
+            <p class="text-black text-center text-0.2xl pb-12">We are very happy to partner with the talented team at
+              BIDDABD to expand in India and abroad. We look forward to supporting the management team to expand to new
+              markets and to further build the road.</p>
+            <h4 class="text-2xl">Nicholas Cator</h4>
+          </div>
+        </div>
+        <div class="investors-content bg-white text-center">
+          <div class="investors-img">
+            <img src="assets/images/Naspers.png" class="img-fluid" alt="investors img" style="margin: 0 auto">
+            <img src="assets/images/double-quotes.svg" class="img-fluid" alt="investors img" style="margin: 0 auto">
+          </div>
+          <div class="investors-text">
+            <p class="text-black text-center text-0.2xl pb-12">Naspers partners with high-potential companies that are
+              tackling big societal needs like education, which represents a significant sector ripe for disruption
+              across the globe.</p>
+            <h4 class="text-2xl">Russell Dreisenstock</h4>
+          </div>
+        </div>
+        <div class="investors-content bg-white text-center">
+          <div class="investors-img">
+            <img src="assets/images/Tiger_Global.png" class="img-fluid" alt="investors img" style="margin: 0 auto">
+            <img src="assets/images/double-quotes.svg" class="img-fluid" alt="investors img" style="margin: 0 auto">
+          </div>
+          <div class="investors-text">
+            <p class="text-black text-center text-0.2xl pb-12">BIDDABD has emerged as a leader in the Indian
+              education-tech sector. They are pioneering technology shaping the future of learning for millions of
+              school students in India. We are excited to support Byju and the team. </p>
+            <h4 class="text-2xl">Scott Shleifer</h4>
+          </div>
+        </div>
+        <div class="investors-content bg-white text-center">
+          <div class="investors-img">
+            <img src="assets/images/Chan_Zuck.png" class="img-fluid" alt="investors img" style="margin: 0 auto">
+            <img src="assets/images/double-quotes.svg" class="img-fluid" alt="investors img" style="margin: 0 auto">
+          </div>
+          <div class="investors-text">
+            <p class="text-black text-center text-0.2xl pb-12">The Chan Zuckerberg initiative supports innovative models
+              of learning wherever they are around the world. BIDDABD represents an opportunity to help even more
+              students develop a love for learning and unlock their potential.</p>
+            <h4 class="text-2xl">Dr. Priscilla Chan and Mark Zuckerberg</h4>
+          </div>
+        </div>
+        <div class="investors-content bg-white text-center">
+          <div class="investors-img">
+            <img src="assets/images/IFC.png" class="img-fluid" alt="investors img" style="margin: 0 auto">
+            <img src="assets/images/double-quotes.svg" class="img-fluid" alt="investors img" style="margin: 0 auto">
+          </div>
+          <div class="investors-text">
+            <p class="text-black text-center text-0.2xl pb-12">This partnership with BIDDABD will help enhance our focus
+              on technology enabled learning platforms for academic improvement, skill development platforms as well as
+              supplemental and low cost education solutions.</p>
+            <h4 class="text-2xl">Ruchira Shukla</h4>
+          </div>
+        </div>
+        <div class="investors-content bg-white text-center">
+          <div class="investors-img">
+            <img src="assets/images/Owl.png" class="img-fluid" alt="investors img" style="margin: 0 auto">
+            <img src="assets/images/double-quotes.svg" class="img-fluid" alt="investors img" style="margin: 0 auto">
+          </div>
+          <div class="investors-text">
+            <p class="text-black text-center text-0.2xl pb-12">Our partnership with BIDDABD will reinforce our commitment
+              to creating the best and most unique learning journeys for the new-age learners.</p>
+            <h4 class="text-2xl">Amit Patel</h4>
+          </div>
+        </div>
+        <div class="investors-content bg-white text-center">
+          <div class="investors-img">
+            <img src="assets/images/Lightspeed.png" class="img-fluid" alt="investors img" style="margin: 0 auto">
+            <img src="assets/images/double-quotes.svg" class="img-fluid" alt="investors img" style="margin: 0 auto">
+          </div>
+          <div class="investors-text">
+            <p class="text-black text-center text-0.2xl pb-12">I am confident that BIDDABD market leading offerings are
+              unique and transformational. Their products are specifically geared with a differentiated pedagogy to the
+              needs of India’s 250 million students.</p>
+            <h4 class="text-2xl">Dev Khare</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- investors ends  -->
+  <!-- byjus-news starts  -->
+  <section id="byjus-news" class="byjus-news section-padding-bottom">
+    <div class="container">
+      <div class="title mt-5 mb-5">
+        <h2 class="text-center text-white" >BIDDABD in the news</h2>
+      </div>
+      <div class="byjus-item">
+        <div class="trust-content byjus-news-content">
+          <a href="https://www.youtube.com/watch?v=QjZVnIaNfBc">
+            <div class="row play-learning-item">
+              <div class="col-lg-6">
+                <div class="byjus-news-right ml-5 mt-3">
+                  <img src="assets/images/image33.png" class="img-fluid" alt="trust img">
+                </div>
+              </div>
+              <div class="col-lg-6  ">
+                <div class="byjus-news-left ml-3">
+                  <img src="assets/images/cnn.png" alt="cnn img">
+                  <h3 class="mt-2 ">BIDDABD enters North America with a $1
+                    Billion investment over next 3 years</h3>
+                  <p>BIDDABD Co-Founder Divya Gokulnath speaks with Julia Chatterly about the company’s planned $ 1 Bn
+                    investment in North America.</p>
+                </div>
+                <span title="Download using YouTube Downloader by Addoncrop"> </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trust-content byjus-news-content">
+          <a href="https://www.youtube.com/watch?v=QjZVnIaNfBc">
+            <div class="row play-learning-item">
+              <div class="col-lg-6">
+                <div class="byjus-news-right ml-5 mt-3">
+                  <img src="assets/images/image44.png" class="img-fluid" alt="trust img">
+                </div>
+              </div>
+              <div class="col-lg-6  ">
+                <div class="byjus-news-left ml-3">
+                  <img src="assets/images/cnn.png" alt="cnn img">
+                  <h3 class="mt-2 " style="font-size: 31px; line-height: 46px; ">BIDDABD Founder Byju Raveendran on his
+                    roots and the company’s financial plans</h3>
+                  <p>BIDDABD Founder Byju Raveendran speaks with Julia Chatterly about his start in Tech & the company’s
+                    path to profitability.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trust-content byjus-news-content">
+          <a href="https://www.youtube.com/watch?v=QjZVnIaNfBc">
+            <div class="row play-learning-item">
+              <div class="col-lg-6">
+                <div class="byjus-news-right ml-5 mt-3">
+                  <img src="assets/images/image11.png" class="img-fluid" alt="trust img">
+                </div>
+              </div>
+              <div class="col-lg-6  ">
+                <div class="byjus-news-left ml-3">
+                  <img src="assets/images/bloomberg.png" alt="cnn img">
+                  <h3 class="mt-2 " >BIDDABD Gokulnath on “Education For
+                    All”, Growth Plans</h3>
+                  <p>BIDDABD Co-Founder Divya Gokulnath discloses the company’s flagship social initiative “Education For
+                    All”, which has impacted 3.4 million children in one year of its launch.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="trust-content byjus-news-content">
+          <a href="https://www.youtube.com/watch?v=QjZVnIaNfBc">
+            <div class="row play-learning-item">
+              <div class="col-lg-6">
+                <div class="byjus-news-right ml-5 mt-3">
+                  <img src="assets/images/image22.png" class="img-fluid" alt="trust img">
+                </div>
+              </div>
+              <div class="col-lg-6  ">
+                <div class="byjus-news-left ml-3">
+                  <img src="assets/images/bloomberg.png" alt="cnn img">
+                  <h3 class="mt-2 " >BIDDABD Buys Coding Site Tynker for $200
+                    Million</h3>
+                  <p>BIDDABD Co-Founder Divya Gokulnath speaks with Emily Chang about the online education giant’s recent
+                    acquisition and expansion into the U.S. market.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div> <!-- byjus-item ends  -->
+      <div class="investors-item pt-4">
+        <div class="investors-content bg-white text-center" style="padding: 20px 25px; height: 476px;">
+          <div class="investors-img">
+            <img src="assets/images/cnn.png" class="img-fluid" alt="investors img" style="">
+            <img src="assets/images/2.jpeg" class="img-fluid" alt="investors img" style="">
+          </div>
+          <div class="investors-text" style="text-align: left;">
+            <h4 class="mt-3" style="font-size: 19px;">The rise of online learning: How BIDDABD became India's biggest
+              edtech company</h4>
+            <p class="text-black pb-12">Bangalore-based education technology company BIDDABD became India's most valuable
+              startup in 2021, as the demand for online learning surged.</p>
+          </div>
+        </div>
+
+        <div class="investors-content bg-white text-center" style="padding: 20px 25px; height: 476px;">
+          <div class="investors-img">
+            <img src="assets/images/forbes.png" class="img-fluid" alt="investors img" style="">
+            <img src="assets/images/3.jpeg" class="img-fluid" alt="investors img" style="">
+          </div>
+          <div class="investors-text" style="text-align: left;">
+            <h4 class="mt-3" style="font-size: 19px;">From India With Love: Unconventional Approach Spells Success For
+              BIDDABD U.S. Strategy</h4>
+            <p class="text-black pb-12">BIDDABD platforms are designed to allow students of all ages and backgrounds to
+              take advantage of opportunities that ultimately lead to greater success.</p>
+          </div>
+        </div>
+
+        <div class="investors-content bg-white text-center" style="padding: 20px 25px; height: 476px;">
+          <div class="investors-img">
+            <img src="assets/images/world_economic.png" class="img-fluid" alt="investors img" style="">
+            <img src="assets/images/14.jpeg" class="img-fluid" alt="investors img" style="">
+          </div>
+          <div class="investors-text" style="text-align: left;">
+            <h4 class="mt-3" style="font-size: 19px;">How Covid-19 Has Changed The Way We Educate Children</h4>
+            <p class="text-black pb-12">Improving digital inclusion is essential if we are to mitigate future global
+              disruptions and enable equitable access to education.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- byjus-news ends  -->
+  <!-- brands ends  -->
+  <section id="brands" class="brands">
+    <div class="containter">
+      <div class="brand-logo">
+        <img src="assets/images/logo_b.svg" class="img-fluid" alt="logo_b">
+      </div>
+      <div class="title mt-5 mb-5">
+        <h2 class="text-center text-white" >BIDDABD in the news</h2>
+      </div>
+      <div class="brand-item">
+        <div class="brand-img">
+          <img src="assets/images/biddabd-osmo.png" class="img-fluid" alt="brand-img">
+        </div>
+        <div class="brand-img">
+          <img src="assets/images/biddabd-english1.png" class="img-fluid" alt="brand-img">
+        </div>
+        <div class="brand-img">
+          <img src="assets/images/biddabd-animation5.png" class="img-fluid" alt="brand-img">
+        </div>
+        <div class="brand-img">
+          <img src="assets/images/biddabd-epic.png" class="img-fluid" alt="brand-img">
+        </div>
+        <div class="brand-img">
+          <img src="assets/images/biddabd-live13.png" class="img-fluid" alt="brand-img">
+        </div>
+        <div class="brand-img">
+          <img src="assets/images/biddabd-math4.png" class="img-fluid" alt="brand-img">
+        </div>
+        <div class="brand-img">
+          <img src="assets/images/biddabd-music3.png" class="img-fluid" alt="brand-img">
+        </div>
+        <div class="brand-img">
+          <img src="assets/images/biddabd-tynker1.png" class="img-fluid" alt="brand-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- brands ends  -->
+  <!-- footer starts  -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-logo">
+              <img src="assets/images/biddhabd-white-logo.png" class="logo img-fluid"alt="">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="links">
+              <h4 class="" style="color: #f5f2f8;">LINKS</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Careers</a></li> <br>
+                <li class="mt-3"><a href="#">Terms of Use</a></li>
+              </ul>
+              <a href="#">Contact Us: queries@byjus.com</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="socail-link">
+              <h4 class="" style="color: #f5f2f8;">FOLLOW US ON</h4>
+              <ul>
+                <li><a href="#"><img src="assets/images/fb.svg" class="img-fluid" alt="social-icon"></a></li>
+                <li><a href="#"><img src="assets/images/twitter.svg" class="img-fluid" alt="social-icon"></a></li>
+                <li><a href="#"><img src="assets/images/li.svg" class="img-fluid" alt="social-icon"></a></li>
+                <li><a href="#"><img src="assets/images/inst.svg" class="img-fluid" alt="social-icon"></a></li>
+                <li><a href="#"><img src="assets/images/yt.svg" class="img-fluid" alt="social-icon"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-6">
+          <div class="app-icon">
+            <img src="assets/images/apple.svg" class="img-fluid mr-2" alt="brand-img">
+            <img src="assets/images/google.svg" class="img-fluid" alt="brand-img">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="copy-text text-end">
+            <span>©2022, BIDDABD. All Rights Reserved. Design by Tanjina</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends  -->
+  <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <!-- Bootstrap Dropdown Hover JS -->
+  <!-- <script src="assets/js/bootstrap-dropdownhover.js"></script>
+  <script src="assets/js/bootstrap-dropdownhover.min.js"></script> -->
+  <script src="assets/js/bootstrap5.0.2.bundle.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/slick.min.js">
+    javascript
+  </script>
+   <!-- jquery waypoints JS -->
+   <script src="assets/js/jquery.waypoints.min.js"></script>
+   <!-- jquery counterup js  -->
+   <script src="assets/js/jquery.counterup.min.js"></script> 
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
