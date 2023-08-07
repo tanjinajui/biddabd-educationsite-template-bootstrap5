@@ -1,1 +1,1 @@
-# biddabd-education-template-bootstrap5
+# biddabd-educationsite-template-bootstrap5
